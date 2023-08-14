@@ -1,0 +1,80 @@
+<html>
+<body>
+<script>
+    //funções são trechos de códigos que podemos chamar a qualquer momento
+
+
+    /*
+    function testes(){
+            // o que eu introduzir nas chaves é o comando que será executado quando a função for chamada
+            console.log('chamando a function testes');
+    }
+    testes()
+    */
+    
+    function testes2(nome,idade,cargo){
+        console.log('o nome passado é: '+nome);
+        console.log('e a idade é: '+idade);
+        console.log('e elx é: '+cargo);
+        console.log('-------------------------------');
+    }
+    
+    testes2('Gabriel',19,'programador');
+
+    /*
+    testes2('Gabriel',19,'namorado');
+    testes2('Alice',19,'namorada');
+    */
+
+
+    /*
+    function pegarNome(){
+        return "Alice";
+
+    }
+    */
+
+    //a função é encerrada assim que executa o comando de return
+    //portanto, tudo após o return nao será lido pelo código
+
+
+    /*
+    function pegarNome(par){
+        if(par == 1){
+            return "Gabriel";
+        }else{
+            return "Alice";
+        }
+
+    }
+
+    var nome = pegarNome(1);
+    console.log(nome);
+    */
+
+    //OUTRAS FORMAS DE DECLARAR FUNÇÕES (por meio de var, const e let)
+
+
+        /*
+        var func = function(){
+            alert('Olá Mundo!');
+
+
+        }
+        func();
+        */
+
+//a função abaixo foi criada e logo depois foi chamada, por meio
+//do comando ()
+
+/*
+(function(){
+    alert('Hello World!');
+})();
+*/
+
+
+
+</script>
+</body>
+</html>

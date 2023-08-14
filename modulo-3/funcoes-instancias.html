@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            function Pessoa(){
+                this.nome = "Gabriel";
+                // this.nome é uma variável relacionada à função em questão
+                // é a forma de declarar variáveis durante a orientação à objetos
+            }
+
+
+
+            var pessoa = new Pessoa();
+            var pessoa2 = new Pessoa();
+            //o new cria um objeto o qual está relacionado à função acima
+
+            pessoa.nome = "Alice";
+
+            alert(pessoa2.nome);
+            //o objeto segue as condições da sua função de referencia
+            
+        </script>
+    </body>
+</html>

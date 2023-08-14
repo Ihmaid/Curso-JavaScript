@@ -1,0 +1,58 @@
+<html>
+    <body>
+        <script>
+            //classes tbm são orientações a objetos, porem de forma mais simples e mais recomendada
+            class Animal{
+                constructor(nome){
+                    this.nome = nome
+                }
+            //esta classe é a mesma coisa que a function animal da ultima aula
+
+                printNome(){
+                    alert(this.nome)
+                }
+            }
+            //para declarar funções também é mais fácil, como visto acima
+
+            class Cachorro extends Animal{
+                constructor(nome){
+                    super(nome)
+                    this.raca = "Bulldog"
+                }
+
+                printRaca(){
+                    return this.raca
+                }
+
+                //extends faz com que a nova classe herde todo o conteudo da classe pai, no caso Animal
+                //super invoca o constructor da classe pai
+            }
+            
+
+
+            cachorro = new Cachorro("Rocky")
+
+            cachorro.printNome()
+
+            
+            //há a forma de declarar objetos utilizando parametros, exemplo abaixo
+            /*
+            class Animal{
+                constructor(nome){
+                    this.nome = nome
+                }
+            }
+
+            animal = new Animal("Baleia")
+            alert = animal.nome
+            */
+
+            /*
+            animal = new Animal("Urso")
+            
+            alert(animal.printNome())
+            */
+
+        </script>
+    </body>
+</html>

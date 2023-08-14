@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script>
+            function Person(name) {
+            this.name = name;
+            this.greeting = function() {
+                alert('Hi! I\'m ' + this.name + '.');
+            };
+            }
+
+            //Dessa forma, este objeto abaixo se torna filho do objeto construtor, herdando
+            //suas instâncias e podendo ser preenchido com novos dados.
+
+            /*
+            var Gabriel = new Person('Alice');
+            Gabriel.name
+            Gabriel.greeting()
+            */
+
+            var person1 = new Person('Bob')
+            var person2 = new Person('Sarah')
+
+            person1.name
+            person1.greeting()
+            person2.name
+            person2.greeting()
+
+
+        </script>
+    </body>
+</html>

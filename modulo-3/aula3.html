@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <script>
+            
+            
+            function Pessoa(){
+                
+                this.nome = "Vasco da Gama"
+                this.idade = "Desde 1898"
+                // é possível tambem criar funções dentro dos objetos
+                this.printNome = function(a){
+                    alert(a)
+
+                }
+                this.ReturnAnimal = function(animal){
+                    return animal 
+                }
+            }
+
+            function Animal(nome,peso){
+                if(nome == undefined){
+                    nome = "Coloca um nome lerdão"
+                }
+                if(peso == undefined){
+                    peso = "Coloca um peso lerdão"
+                }
+                //acima é uma forma de validação para que erros sejam evitados
+                this.nome = nome
+                this.peso = peso
+
+
+            }
+
+            var animal1 = new Animal("Baleia Cachalote")
+
+
+
+            var pessoa = new Pessoa()
+            var animal = new Animal("Cachorro","18kg")
+
+            
+
+            alert(pessoa.ReturnAnimal(animal).peso)
+
+            /*
+            var pessoa_2 = new Pessoa()
+            
+            pessoa_2.nome = "Gabriel"
+
+            pessoa.printNome(pessoa_2.nome)
+            */
+         
+
+        
+        
+            
+        </script>
+    </body>
+</html>

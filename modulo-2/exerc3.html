@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+            var n1 = prompt("Número 1:")
+            var sinal = prompt("Informe o sinal da operação: ")
+            while(sinal != '-' && sinal != '+' && sinal != '*' &&  sinal != '/'){
+
+                alert("Informe um sinal válido!")
+                var sinal = prompt("Informe o sinal da operação: ")
+            }
+            var n2 = prompt("Número 2: ")
+
+            n1 = parseInt(n1)
+            n2 = parseInt(n2)
+            //parseInt é uma função prórpia do JS que torna uma string em um número
+            var resultadofinal = 0
+
+            if(sinal == "+"){
+                resultadofinal = n1 + n2
+            }else if(sinal == "-"){
+                resultadofinal = n1 - n2
+            }else if(sinal == "*"){
+                resultadofinal = n1 * n2
+            }else if(sinal == "/"){
+                resultadofinal = n1 / n2
+            }
+
+            alert("O Resultado final é: "+resultadofinal)
+            
+        </script>
+    </body>
+</html>
