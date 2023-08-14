@@ -29,6 +29,8 @@ Let's learn and grow together! Thank you for being a part of my journey.
 
 ## License
 
+This repository is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for more details.
+
 ---
 
 *Note: This repository is solely for learning purposes and may contain code and projects inspired by the "Javascript Completo" course by Danki Code.*
